@@ -247,5 +247,6 @@ class LMEmbedModel:
         self.next_random_ = self.next_random_ & 0xFFFFFFFFFFFFFFFF # unsigned long long simulation
 
 
-    def save_embeddings(self, output_fname):
-        self.vocabulary_.save_embeddings(output_fname)
+    def save_embeddings(self, output_fname, use_etarget=True):
+        self.vocabulary_.save_embeddings(output_fname, use_etarget)
+
